@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- internation phone number country code -->
+    <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+   />
+   <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="resisterWrper">
+        <h3>Register form</h3>
+        <div class="registerFromWper">
+            <!-- top radio btn here -->
+            <div class="radioBtnWrper">
+                <div><input type="radio" name="" id="">Register as a Member</div>
+                <div><input type="radio" name="" id="">Register as an Affiliate</div>
+            </div>
+
+            <!-- input file here -->
+            <div class="inputFildWrper">
+                
+                    
+                    <div>
+                        <input type="text" placeholder="Frist Name *">
+                        <i class="fa fa-user-circle icons"></i>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Last Name *">
+                        <i class="fa fa-user-circle icons"></i>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Text *">
+                        <i class="fa fa-text-width icons"></i>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Email *">
+                        <i class="fa fa-envelope icons"></i>
+                    </div>
+                    <div>
+                        <input id="phone" name="phone" placeholder="Enter Phone Number" type="tel" />
+                        <i class="fa fa-phone icons"></i>
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Enter Password">
+                        <i class="fa fa-lock icons"></i>
+                    </div>
+                
+                    <div>
+                        <input type="number" placeholder="Referring Affiliate Number">
+                        <i class="fa fa-code icons"></i>
+                        <p>If you were referred by an affiliate please input the number above</p>
+                    </div>
+                    <div>
+                        <input type="file">
+                        <i class="fa fa-file icons"></i>
+                        <p>Upload Profile image (5MB size limit)</p>
+                    </div>
+               
+
+
+
+                <!-- this is for affiliate mumber -->
+
+                    <!-- <div>
+                        <input type="text" placeholder="Add Website">
+                        <i class="fa fa-globe icons"></i>
+                    </div>
+
+                    <div>
+                        <textarea placeholder="Meassage..."></textarea>
+                        <i class="fa fa-comment icons"></i>
+                    </div> -->
+
+                    
+
+
+                <div class="checkBoxWrp">
+                    <input type="checkbox">
+                    <p>I accept all the trams and agreement of the program including the <a href="#" class="heilight">praivacy policy</a> and <a href="#" class="heilight">trans and conditions</a>.</p>
+                </div>
+
+            </div>
+            <button class="registerBth">
+                Register 
+                <i class="fa fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+
+
+
+    <!-- internaltion phone number country code -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <!-- custom script -->
+    <script>
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            utilsScript:
+             "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+   });
+    </script>
+</body>
+</html>
+
+
